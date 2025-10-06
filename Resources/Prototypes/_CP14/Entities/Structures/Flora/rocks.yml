@@ -77,6 +77,29 @@
             acts: [ "Destruction" ]
 
 - type: entity
+  id: CP14RockSmallFantasy
+  parent: CP14RockSmall
+  suffix: Small. Strange.
+  components:
+  - type: Sprite
+    sprite: _CP14/Structures/Flora/Rocks/rocks_small.rsi
+    offset: 0,0.5
+    layers:
+      - state: fantasy_rock1
+        map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        fantasy_rock1: ""
+        fantasy_rock2: ""
+        fantasy_rock3: ""
+        fantasy_rock4: ""
+        fantasy_rock5: ""
+        fantasy_rock6: ""
+        fantasy_rock7: ""
+        fantasy_rock8: ""
+
+- type: entity
   id: CP14RockBig
   parent: CP14BaseRock
   suffix: Big
@@ -149,3 +172,23 @@
         moss_rock3: ""
         moss_rock4: ""
         moss_rock5: ""
+
+- type: entity
+  id: CP14RockBigFantasy
+  parent: CP14RockBig
+  suffix: Big. Strange.
+  components:
+  - type: Sprite
+    sprite: _CP14/Structures/Flora/Rocks/rocks_big.rsi
+    offset: 0,0.5
+    layers:
+      - state: fantasy_rock1
+        map: ["random"]
+  - type: RandomSprite
+    available:
+    - random:
+        fantasy_rock1: ""
+        fantasy_rock2: ""
+        fantasy_rock3: ""
+        fantasy_rock4: ""
+        fantasy_rock5: ""
